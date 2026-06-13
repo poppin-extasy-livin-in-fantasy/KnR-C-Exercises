@@ -1,2 +1,2 @@
-# -KnR-C-Exercises
+# -KnR-C-Exercise-1.17
 Solutions to exercises from "The C Programming Language" by Kernighan &amp; Ritchie. Written in C, compiled with MSVC. Chapter 1 exercises including word count,  temperature converter, longest/shortest line finder, and more.
