@@ -1,25 +1,19 @@
-# -KnR-C-Exercise-1.17
+# -KnR-C-Exercise-1.20
 
-Solution to exercise 1.17 from "The C Programming Language" by Kernighan & Ritchie.
-Prints all input lines longer than 80 characters.
-Written in C (C11), compiled with MSVC (Visual Studio).
+Solution to exercise 1.20 from "The C Programming Language" by Kernighan & Ritchie.
+Replaces tab characters in the input with the proper number of spaces to the next tab stop.
+Written in C (C11), compiled with GCC / MSVC.
 
 ## Example
 Input:
-
-hi
-
-this is a very long line that has more than eighty characters in it so it will be printed
-
-
+hello	world
+a	b	c
 
 Output:
+hello   world
+a       b       c
 
-:your line have to be longer then 80 characters
-
-:line is:  this is a very long line that has more than eighty characters in it so it will be printed
-
-
-:lengh is: 90
-
-<img width="904" height="147" alt="изображение" src="https://github.com/user-attachments/assets/38afd07e-4087-42c8-91c7-44aabbdfc2f4" />
+## Memory Safety & Architecture
+Unlike basic implementations that are vulnerable to Buffer Overflow, this version uses strict boundaries validation:
+* **State Tracking:** Tracks both the buffer index (`i`) and virtual screen column (`col`) independently.
+* **Overflow Protection:** Dynamically checks `if (i + spaces >= lim - 1)` before writing to prevent memory corruption.
