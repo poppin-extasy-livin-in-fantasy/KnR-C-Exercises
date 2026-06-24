@@ -2,7 +2,7 @@
 
 Solutions to exercises from **"The C Programming Language"** by Brian W. Kernighan and Dennis M. Ritchie.
 
-Written in C (C11), compiled with MSVC (Visual Studio 2022).
+Written in C (C11), compiled with MSVC (Visual Studio 2026).
 
 ## Structure
 
