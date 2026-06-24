@@ -2,7 +2,8 @@
 
 Solution to exercise 1.20 from "The C Programming Language" by Kernighan & Ritchie.
 Replaces tab characters in the input with the proper number of spaces to the next tab stop.
-Written in C (C11), compiled with GCC / MSVC.
+
+Written in C (C11), compiled with MSVC (Visual Studio) / GCC
 
 ## Example
 
